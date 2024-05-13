@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos  diferentes ou simplesmente aumente e diminua o tamanho no seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagemp.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemm.png" type="image/png">
+        <img src="imagens/imagemg.png" alt="imagem g">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos  aprender a reproduzir audio em em HTML5</p>
+    <audio 
+        src="midia/calorblancocumbiadeli.mp3" controls autoplay>
+    </audio> <!--MP3 OGG WAV (WAV É MUITO PESADO)-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+    </audio>
+</body>
+</html>

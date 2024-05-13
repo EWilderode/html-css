@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+</head>
+    <style>
+        /*você pode alterar uma block-level para uma inline-level utilizando a tag display: block; ou ao contrario utilizando display: inline;*/
+        h1{ /*box-level*/
+            display: block;
+            text-align: center;
+            background-color: rgb(248, 228, 228);
+            height: 300px;
+            width: 300px;
+            
+            /* este é um exemplo de uma shorthand, uma abreviação dos elementos postos em um classe de css
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+            border: 10px solid rgb(185, 57, 57);
+
+            padding: 10px;
+
+            margin: 10px auto 40px auto;
+            /*
+            Para centralizar uma margem = margin: auto; 
+            */  
+
+            outline: 5px dashed coral;
+        }
+
+
+        a{  /*inline-level*/
+            display: inline;
+            border: 10px solid rgb(79, 250, 11);
+             
+            padding: 10px;
+        }
+
+    </style>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Paragrafos  também são exemplos de box-level, mas os <a href="#"> links também são exemplos de caixas box-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
